@@ -1,7 +1,7 @@
 
 namespace offset
 {
-  constexpr uint64_t uworld_state = 0x8FB6940;
+        constexpr uint64_t uworld_state = 0x8FB6940;
 	constexpr uint64_t uworld_key = uworld_state + 0x38;
 	constexpr uint64_t override_materials = 0x4f8;
 	constexpr uint64_t game_instance = 0x1A8;
