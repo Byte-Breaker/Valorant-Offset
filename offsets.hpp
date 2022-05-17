@@ -38,3 +38,5 @@ namespace offset
 	constexpr auto CachedFresnelIntensity = 0x688;
 	constexpr auto CachedLocalFresnelOffset = 0x68c;
 }
+
+//Syrins
