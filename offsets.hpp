@@ -1,42 +1,52 @@
+namespace offsets {
+	// global
+	uint64_t uworld_key = 0x88534B8; 
+	uint64_t uworld_state = 0x8853480;
+	uint64_t line_of_sight = 0x44DBC90;
+	uint64_t bone_matrix = 0x44A4340;
+	
+	// world
+	uint64_t persistent_level = 0x38;
+	uint64_t game_instance = 0x1A8;
 
-namespace offset
-{
-        constexpr uint64_t uworld_state = 0x8FB6940;
-	constexpr uint64_t uworld_key = uworld_state + 0x38;
-	constexpr uint64_t override_materials = 0x4f8;
-	constexpr uint64_t game_instance = 0x1A8;
-	constexpr uint64_t persistent_level = 0x38;
-	constexpr uint64_t local_player_array = 0x40;
-	constexpr uint64_t local_player_controller = 0x38;
-	constexpr uint64_t local_player_pawn = 0x460;
-	constexpr uint64_t control_rotation = 0x440;
-	constexpr uint64_t camera_manager = 0x478;
-	constexpr uint64_t camera_position = 0x1240;
-	constexpr uint64_t camera_rotation = 0x124C;
-	constexpr uint64_t camera_fov = 0x1258;
-	constexpr uint64_t actor_array = 0xA0;
-	constexpr uint64_t actor_count = 0xB8;
-	constexpr uint64_t unique_id = 0x38;
-	constexpr uint64_t mesh_component = 0x430;
-	constexpr uint64_t last_render_time = 0x350;
-	constexpr uint64_t last_submit_time = 0x358;
-	constexpr uint64_t bone_array = 0x558;
-	constexpr uint64_t bone_count = 0x560;
-	constexpr uint64_t component_to_world = 0x250;
-	constexpr uint64_t root_component = 0x230;
-	constexpr uint64_t root_position = 0x164;
-	constexpr uint64_t damage_handler = 0x998;
-	constexpr uint64_t health = 0x1B0;
-	constexpr uint64_t dormant = 0x120;
-	constexpr uint64_t player_state = 0x3F0;
-	constexpr uint64_t team_component = 0x5A0;
-	constexpr uint64_t team_id = 0xF8;
-	constexpr auto FresnelIntensity = 0x6B0;
-	constexpr auto FresnelOffset = 0x694;
-	constexpr auto CachedFresnelColor = 0x680;
-	constexpr auto CachedFresnelOffset = 0x684;
-	constexpr auto CachedFresnelIntensity = 0x688;
-	constexpr auto CachedLocalFresnelOffset = 0x68c;
+	// player
+	uint64_t localplayers_array = 0x40;
+	uint64_t localplayer = 0x40;
+	uint64_t player_controller = 0x38;
+	uint64_t apawn = 0x460;
+
+	// vector
+	uint64_t root_component = 0x230;
+	uint64_t position = 0x164;
+	uint64_t rotation = 0x170;
+	
+	// controllers
+	uint64_t damage_controller = 0x9A8;
+	uint64_t camera_controller = 0x440;
+	
+	// camera
+	uint64_t camera_position = 0x1240;
+	uint64_t camera_rotation = 0x124C;
+	uint64_t camera_fov = 0x1258;
+	uint64_t camera_manager = 0x478;
+
+
+	// level > actors
+	uint64_t actor_array = 0xA0;
+	uint64_t actors_count = 0xB8;
+
+	// level > actors info
+	uint64_t actor_id = 0x18;
+	uint64_t unique_id = 0x38;
+	uint64_t team_component = 0x628;
+	uint64_t team_id = 0xF8;
+	uint64_t health = 0x1B0;
+	uint64_t dormant = 0x100;
+	uint64_t player_state = 0x3F0;
+
+	// mesh
+	uint64_t mesh = 0x430;
+	uint64_t component_to_world = 0x250;
+	uint64_t bone_array = 0x558;
+	uint64_t bone_count = 0x560;
 }
-
-//Syrins
